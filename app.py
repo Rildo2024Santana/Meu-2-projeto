@@ -12,7 +12,7 @@ st.set_page_config(
 lateral = st.sidebar
 data = lateral.date_input("Selecione a dara")
 cidade = lateral.selectbox("Selecione a cidade",
-                          ["Belo Horizonte","Rio de Janeiro","Manaus"])
+                          [ "  " ,"Belo Horizonte","Rio de Janeiro","Manaus"])
 
 
 @st.cache_data
@@ -30,7 +30,7 @@ st.session_state["cidade"] = cidade
 
 st.title("Dados")
 
-# você colocando Col isso quer dizer contidade de colunas na tela , vc tb pode dar pocentagem para elas 
+# você colocando Col isso quer dizer quantidade de colunas na tela , vc tb pode dar pocentagem para elas 
 # 60% para uma e 40% pocento para outra({0,60, 0,40}) tem que tirar o numero 2 certo.
 
 col1, col2 = st.columns(2)
