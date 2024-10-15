@@ -49,7 +49,7 @@ col2.bar_chart(municipio)
 # Para colocar a cidade na parte de baixou da planilha .
 
 st.subheader("cidade")
-st.write(f"A cidade selecionada foi {cidade}")
+st.write(f"A cidade selecionada foi:   {cidade}")
 
 # Vamos crir pagimas e ler dados de uma pagima em outra pagima,
 # vc tem que criar uma pasta chamada pages, dentro dela vc vai cria arquivos,
