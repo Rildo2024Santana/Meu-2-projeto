@@ -11,7 +11,7 @@ st.set_page_config(
 
 lateral = st.sidebar
 data = lateral.date_input("Selecione a dara")
-cidade = lateral.selectbox("Ranking das 50 cidades mais populosas do Brasil,no último censo, de 2010 ?",
+cidade = lateral.selectbox("Cidades mais populosas do Brasil,no último censo, de 2010 ?",
                           [ "  " ,"São Paulo (SP): 11.451.245","Rio de Janeiro (RJ): 6.211.423","Brasília (DF): 2.817.068",
                            "Fortaleza (CE): 2.428.678","Salvador (BA): 2.418.005","Belo Horizonte (MG): 2.315.560","Manaus (AM): 2.063.547",
                            "Curitiba (PR): 1.773.733","Recife (PE): 1.488.920","Goiânia (GO): 1.437.237","Porto Alegre (RS): 1.332.570",
@@ -44,7 +44,7 @@ col1, col2 = st.columns(2)
 tabela = col1.dataframe(dados)
 
 municipio = dados["municipio"].value_counts()
-col2.Bar_Chart(municipio)
+col2.bar_chart(municipio)
 
 # Para colocar a cidade na parte de baixou da planilha .
 
