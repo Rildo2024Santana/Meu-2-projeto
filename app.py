@@ -11,8 +11,14 @@ st.set_page_config(
 
 lateral = st.sidebar
 data = lateral.date_input("Selecione a dara")
-cidade = lateral.selectbox("Selecione a cidade",
-                          [ "  " ,"Belo Horizonte","Rio de Janeiro","Manaus"])
+cidade = lateral.selectbox("Ranking das 50 cidades mais populosas do Brasil,no último censo, de 2010 ?",
+                          [ "  " ,"São Paulo (SP): 11.451.245","Rio de Janeiro (RJ): 6.211.423","Brasília (DF): 2.817.068",
+                           "Fortaleza (CE): 2.428.678","Salvador (BA): 2.418.005","Belo Horizonte (MG): 2.315.560","Manaus (AM): 2.063.547",
+                           "Curitiba (PR): 1.773.733","Recife (PE): 1.488.920","Goiânia (GO): 1.437.237","Porto Alegre (RS): 1.332.570",
+                           "Belém (PA): 1.303.389","Guarulhos (SP): 1.291.784","Campinas (SP): 1.138.309","São Luís (MA): 1.037.775",
+                           "Maceió (AL): 957.916","Campo Grande (MS): 897.938","São Gonçalo (RJ): 896.744","Teresina (PI): 866.300",
+                           "João Pessoa (PB): 833.932",])
+
 
 
 @st.cache_data
