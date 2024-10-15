@@ -46,7 +46,7 @@ col1, col2 = st.columns(2)
 tabela = col1.dataframe(dados)
 
 municipio = dados["municipio"].value_counts()
-col2.Bar_Chart_Race(municipio)
+col2.Bar_Chart(municipio)
 
 # Para colocar a cidade na parte de baixou da planilha .
 
