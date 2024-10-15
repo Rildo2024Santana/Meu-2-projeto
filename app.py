@@ -19,8 +19,6 @@ cidade = lateral.selectbox("Ranking das 50 cidades mais populosas do Brasil,no �
                            "Maceió (AL): 957.916","Campo Grande (MS): 897.938","São Gonçalo (RJ): 896.744","Teresina (PI): 866.300",
                            "João Pessoa (PB): 833.932",])
 
-
-
 @st.cache_data
 def carregar_dados():
     dados = pd.read_csv("acidentes.csv")
@@ -50,7 +48,7 @@ col2.Bar_Chart(municipio)
 
 # Para colocar a cidade na parte de baixou da planilha .
 
-st.subheader("Cidade")
+st.subheader("cidade")
 st.write(f"A cidade selecionada foi {cidade}")
 
 # Vamos crir pagimas e ler dados de uma pagima em outra pagima,
