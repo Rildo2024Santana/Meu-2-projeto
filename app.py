@@ -42,9 +42,9 @@ col1, col2 = st.columns(2)
 # Agora vc vai trocar os st por col1 , col2 isso faz vc colocar cada uma ao lado planilha mais pocentagem.
 
 tabela = col1.dataframe(dados)
-
+# vou trocar bar_chart para line_chart.
 municipio = dados["municipio"].value_counts()
-col2.bar_chart(municipio)
+col2.line_chart(municipio)
 
 # Para colocar a cidade na parte de baixou da planilha .
 
