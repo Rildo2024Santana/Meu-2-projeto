@@ -49,7 +49,7 @@ mostrar_grafico = st.toggle("Mostrar gráfico")
 
 if mostrar_grafico:
     municipio = dados["municipio"].value_counts()
-col2.line_chart(municipio)
+    col2.line_chart(municipio)
 
 # Para colocar a cidade na parte de baixou da planilha .
 
