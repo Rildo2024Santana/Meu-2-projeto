@@ -7,6 +7,6 @@ st.set_page_config(
 cidade = st.session_state["cidade"]
 
 st.title("Dados do Sistema")
-st.text(st.session_state["data"], format="DD/MM/YYY")
+st.text(st.session_state["data"], format="DD/MM/YYYY")
 st.text(st.session_state["cidade"])
 
