@@ -6,7 +6,7 @@ import pandas as pd
 
 st.set_page_config(
     page_title="Meu sistema Streamlit",
-    page_icon="♟️",
+    page_icon="🚥",
     layout="wide")
 
 lateral = st.sidebar
@@ -29,7 +29,7 @@ def carregar_dados():
 
 dados = carregar_dados()
 st.session_state["dados"] = dados
-st.session_state["data"] = data
+st.session_state["data",format="DD/MM/YYYY"] = data
 st.session_state["cidade"] = cidade
 
 st.title("Dados")
