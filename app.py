@@ -29,7 +29,7 @@ def carregar_dados():
 
 dados = carregar_dados()
 st.session_state["dados"] = dados
-st.session_state["data",format="DD/MM/YYYY"] = data
+st.session_state["data"] = data,format="DD/MM/YYYY"
 st.session_state["cidade"] = cidade
 
 st.title("Dados")
