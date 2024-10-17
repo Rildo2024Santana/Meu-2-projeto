@@ -6,11 +6,11 @@ import pandas as pd
 
 st.set_page_config(
     page_title="Meu sistema Streamlit",
-    page_icon="🕹️",
+    page_icon="♟️",
     layout="wide")
 
 lateral = st.sidebar
-data = lateral.date_input("Selecione a data")
+data = lateral.date_input("Selecione a data", format="DD/MM/YYYY")
 cidade = lateral.multiselect("Pesquisa do censo em 2010, Cidades mais populosas do Brasil?",
                           [ "  " ,"São Paulo (SP): 11.451.245","Rio de Janeiro (RJ): 6.211.423","Brasília (DF): 2.817.068",
                            "Fortaleza (CE): 2.428.678","Salvador (BA): 2.418.005","Belo Horizonte (MG): 2.315.560","Manaus (AM): 2.063.547",
