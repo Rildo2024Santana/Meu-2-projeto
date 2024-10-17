@@ -29,7 +29,7 @@ def carregar_dados():
 
 dados = carregar_dados()
 st.session_state["dados"] = dados
-st.session_state["data"] = data,format="DD/MM/YYYY"
+st.session_state["data"] = data
 st.session_state["cidade"] = cidade
 
 st.title("Dados")
@@ -49,7 +49,7 @@ mostrar_grafico = st.toggle("Mostrar gráfico")
 
 if mostrar_grafico:
     municipio = dados["municipio"].value_counts()
-    col2.line_chart(municipio)
+    col2.bar_chart(municipio)
 
 # Para colocar a cidade na parte de baixou da planilha .
 
